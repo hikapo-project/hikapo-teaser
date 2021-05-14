@@ -19,4 +19,4 @@ jobs:
           AWS_REGION: "us-west-2"
           FROM_PATH: "./publish"
           DEST_PATH: "s3://hikapo.com"
-          OPTIONS: "--acl public-read"
+          OPTIONS: "--delete --acl public-read"
