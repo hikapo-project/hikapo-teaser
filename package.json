@@ -1,0 +1,27 @@
+{
+  "name": "hikapo-teaser",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "live-server --ignore=.git --mount=/:publish"
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-recess-order",
+      "stylelint-config-recommended",
+      "stylelint-prettier/recommended"
+    ]
+  },
+  "repository": "git@github.com:hikapo-project/hikapo-teaser.git",
+  "author": "ramram1048 <ramram1048@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "prettier": "^2.3.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recess-order": "^2.4.0",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.2.0"
+  }
+}
