@@ -15,25 +15,9 @@ p,
 h1 {
   margin: 0;
 }
-
-.background {
-  height: 100%;
-  max-height: 1000px;
-  background-image: url(assets/ffxiv_20190404_162052_192.png);
-  background-repeat: no-repeat;
-  background-position: center -34px;
-  background-size: auto 50%;
-}
-.wrap {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #ffffff;
-}
 .main {
   box-sizing: border-box;
-  height: 100%;
+  min-height: 100%;
   padding-bottom: 84px;
   overflow: hidden;
 }
@@ -43,16 +27,16 @@ h1 {
 }
 
 .heading {
-  width: 285px;
-  height: 77px;
-  margin: 44px auto 0;
+  width: 292px;
+  height: 79px;
+  margin: 42px auto 0;
   background-image: url(assets/heading-mobile.png);
   background-size: 100%;
 }
 .logo {
   width: 221px;
   height: 184px;
-  margin: 38px auto 0;
+  margin: 37px auto 0;
   background-image: url(assets/logo.png);
   background-size: 100%;
 }
@@ -65,7 +49,7 @@ h1 {
   letter-spacing: 1.3px;
 }
 .icon-wrap {
-  margin-top: 25px;
+  margin-top: 21px;
   text-align: center;
 }
 .icon {
@@ -80,47 +64,46 @@ h1 {
   letter-spacing: 0.9px;
 }
 
-@media (min-height: 1000px) and (max-width: 1024px) {
-  .wrap {
-    top: 416px;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .background {
-    background-position-y: -134px;
+    background-position-y: 250%;
     background-size: 1920px;
+    transform: translateY(-50%);
   }
   .main {
-    padding-bottom: 92px;
+    padding-bottom: 136px;
   }
   .footer {
-    padding-top: 41px;
-    margin-top: -92px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    margin-top: -136px;
   }
   .heading {
-    width: 631px;
-    height: 40px;
-    margin-top: 78px;
+    width: 642px;
+    height: 42px;
+    margin-top: 38px;
     background-image: url(assets/heading-desktop.png);
   }
   .logo {
-    width: 389px;
-    height: 326px;
-    margin-top: 27px;
+    width: 376px;
+    height: 315px;
+    margin-top: 39px;
+  }
+  .logo-wrap {
+    width: 720px;
+    height: 358px;
+    margin: 30px auto 0;
+    overflow: hidden;
+    background-image: url(assets/bg.gif);
+    background-size: 100%;
   }
   .coming-soon {
-    margin-top: 33px;
+    margin-top: 30px;
     font-size: 30px;
     line-height: 44px;
     letter-spacing: 1.5px;
   }
   .icon-wrap {
-    margin-top: 44px;
-  }
-
-  @media (min-height: 1300px) {
-    .wrap {
-      top: 563px;
-    }
+    margin-top: 58px;
   }
 }
