@@ -80,8 +80,47 @@ h1 {
   letter-spacing: 0.9px;
 }
 
-@media (min-height: 1000px) {
+@media (min-height: 1000px) and (max-width: 1024px) {
   .wrap {
     top: 416px;
+  }
+}
+@media (min-width: 1024px) {
+  .background {
+    background-position-y: -134px;
+    background-size: 1920px;
+  }
+  .main {
+    padding-bottom: 92px;
+  }
+  .footer {
+    padding-top: 41px;
+    margin-top: -92px;
+  }
+  .heading {
+    width: 631px;
+    height: 40px;
+    margin-top: 78px;
+    background-image: url(assets/heading-desktop.png);
+  }
+  .logo {
+    width: 389px;
+    height: 326px;
+    margin-top: 27px;
+  }
+  .coming-soon {
+    margin-top: 33px;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 1.5px;
+  }
+  .icon-wrap {
+    margin-top: 44px;
+  }
+
+  @media (min-height: 1300px) {
+    .wrap {
+      top: 563px;
+    }
   }
 }
