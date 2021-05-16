@@ -1,0 +1,87 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: source-han-sans-japanese, sans-serif;
+}
+.hide {
+  position: absolute;
+  color: transparent;
+  user-select: none;
+}
+p,
+h1 {
+  margin: 0;
+}
+
+.background {
+  height: 100%;
+  max-height: 1000px;
+  background-image: url(assets/ffxiv_20190404_162052_192.png);
+  background-repeat: no-repeat;
+  background-position: center -34px;
+  background-size: auto 50%;
+}
+.wrap {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+.main {
+  box-sizing: border-box;
+  height: 100%;
+  padding-bottom: 84px;
+  overflow: hidden;
+}
+.footer {
+  padding: 33px 0 25px;
+  margin-top: -84px;
+}
+
+.heading {
+  width: 285px;
+  height: 77px;
+  margin: 44px auto 0;
+  background-image: url(assets/heading-mobile.png);
+  background-size: 100%;
+}
+.logo {
+  width: 221px;
+  height: 184px;
+  margin: 38px auto 0;
+  background-image: url(assets/logo.png);
+  background-size: 100%;
+}
+.coming-soon {
+  margin-top: 30px;
+  font-size: 26px;
+  line-height: 37px;
+  color: #707070;
+  text-align: center;
+  letter-spacing: 1.3px;
+}
+.icon-wrap {
+  margin-top: 25px;
+  text-align: center;
+}
+.icon {
+  width: 48px;
+  height: 48px;
+}
+.copyrights {
+  font-size: 18px;
+  line-height: 26px;
+  color: #707070;
+  text-align: center;
+  letter-spacing: 0.9px;
+}
+
+@media (min-height: 1000px) {
+  .wrap {
+    top: 416px;
+  }
+}
