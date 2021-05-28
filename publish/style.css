@@ -76,7 +76,6 @@ h1 {
   .footer {
     padding-top: 55px;
     padding-bottom: 55px;
-    margin-top: -136px;
   }
   .heading {
     width: 642px;
@@ -132,14 +131,14 @@ height: auto;
 }
 
 .logo_star {
-	margin: 0 auto 100px;
+	margin: 0 auto;
 }
 
 .what {
 	background: url("assets/sp_bg_01.png") no-repeat;
 	text-align: center;
 	background-position: center;
-	margin: 0 0 80px;
+	margin: 0;
 }
 
 .what .number {
@@ -156,34 +155,34 @@ height: auto;
 }
 
 .what_text {
-	margin: 100px auto 120px;
+	margin: 30px auto 120px;
 	width: 650px;
 	text-align: left;
 }
 
 @media (max-width: 480px) {
-	.logo_star {
+.logo_star {
 	margin: 0 auto 30px;
 }
 	
-	.what {
+.what {
 	background: url("assets/sp_bg_02.png") no-repeat;
 	text-align: center;
 	background-position: center;
 }
 	
-	.what_text {
-	margin: 100px auto 120px;
+.what_text {
+	margin: 0 auto 120px;
 	width: 100%;
 	text-align: center;
 }
 	
-	.what .number {
+.what .number {
 	color: #a0d592;
 	font-size: 50px;
 	margin: 0}
 	
-	.what h2 {
+.what h2 {
 	font-weight: 100;
 	letter-spacing: 0.1em;
 	font-size: 26px;
@@ -192,24 +191,24 @@ height: auto;
 }
 }
 
-
 .what_text h3 {
 	font-size: 1.8em;
 	font-weight: 100;
+	margin: 0;
 }
 
 @media (max-width: 480px) {
-	.what_text {
+.what_text {
 	margin: 50px auto 0;
 	width: 100%;
 	text-align: left;
 	padding: 0 10px;
 }
-	.what_text h3 {
+.what_text h3 {
 	font-size: 1.6em;
 	font-weight: 100;
 }
-	.what_text p {
+.what_text p {
 	letter-spacing: 0.1em;
 	line-height: 1.8em;
 	font-size: 1.2em;
@@ -242,16 +241,11 @@ height: auto;
 	margin: 0 0 25px;
 	padding: 0 0 0 35px;
 	text-align: left;
+	letter-spacing: 0.3em;
 }
 
 .clear {
 	clear: both;
 }
-
-.footer01 {
-	margin: 100px auto 30px;
-  text-align: center;
-}
-
 
 	
