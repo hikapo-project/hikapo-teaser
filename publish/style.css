@@ -25,7 +25,6 @@ h1 {
   padding: 33px 0 25px;
   text-align: center;
 }
-
 .heading {
   width: 292px;
   height: 79px;
@@ -62,6 +61,78 @@ h1 {
   color: #707070;
   text-align: center;
   letter-spacing: 0.9px;
+}
+
+#content {
+  text-align: center;
+}
+#content img {
+  width:647px;
+  max-width: 100%;
+  height: auto;
+}
+#main {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto 100px;
+  text-align: center;
+}
+.logo_star {
+  margin: 0 auto;
+}
+.what {
+  background: url("assets/sp_bg_01.png") no-repeat;
+  text-align: center;
+  background-position: center;
+  margin: 0;
+}
+.what .number {
+  color: #a0d592;
+  font-size: 60px;
+  margin: -50px 0 0 0
+}
+.what h2 {
+  font-weight: 100;
+  letter-spacing: 0.1em;
+  font-size: 30px;
+  margin: 0 0 0;
+  padding: 0;
+}
+.what_text {
+  margin: 30px auto 120px;
+  width: 650px;
+  text-align: left;
+}
+.what_text h3 {
+  font-size: 1.8em;
+  font-weight: 100;
+  margin: 0;
+}
+.what_text p {
+  letter-spacing: 0.1em;
+  line-height: 1.8em;
+  font-size: 1.2em;
+}
+.what_text .color {
+  color: #FFEA62;
+}
+.what_text ul {
+  margin: 30px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size:1.4em;
+  font-weight: 100;
+}
+.what_text li {
+  background: url("assets/icon_hikapo.png") no-repeat;
+  line-height: 28px;
+  margin: 0 0 25px;
+  padding: 0 0 0 35px;
+  text-align: left;
+  letter-spacing: 0.3em;
+}
+.clear {
+  clear: both;
 }
 
 @media (min-width: 768px) {
@@ -105,147 +176,51 @@ h1 {
   .icon-wrap {
     margin-top: 58px;
   }
+  .br-sp {
+    display: none;
+  }
 }
 
-/*ティザー更新用*/
-#content {
-	text-align: center;
+@media (max-width: 576px) {
+  .logo_star {
+    margin: 0 auto 30px;
+  }
+  .what {
+    background: url("assets/sp_bg_02.png") no-repeat;
+    text-align: center;
+    background-position: center;
+  }
+  .what_text {
+    margin: 0 auto 120px;
+    width: 100%;
+    text-align: center;
+  }
+  .what .number {
+    color: #a0d592;
+    font-size: 50px;
+    margin: 0
+  }
+  .what h2 {
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    font-size: 26px;
+    margin: 0 0 0;
+    padding: 0;
+  }
+  .what_text {
+    margin: 50px auto 0;
+    width: 100%;
+    text-align: left;
+    padding: 0 10px;
+  }
+  .what_text h3 {
+    font-size: 1.6em;
+    font-weight: 100;
+  }
+  .what_text p {
+    letter-spacing: 0.1em;
+    line-height: 1.8em;
+    font-size: 1.2em;
+    text-align: center;
+  }
 }
-
-#content img {
-width:647px;
-max-width: 100%;
-height: auto;
-}
-
-#main {
-	width: 100%;
-	text-align: center;
-	margin: 0px auto 100px;
-	text-align: center;
-}
-
-@media (min-width: 768px) {
-	.br-sp {display: none; }
-	
-}
-
-.logo_star {
-	margin: 0 auto;
-}
-
-.what {
-	background: url("assets/sp_bg_01.png") no-repeat;
-	text-align: center;
-	background-position: center;
-	margin: 0;
-}
-
-.what .number {
-	color: #a0d592;
-	font-size: 60px;
-	margin: -50px 0 0 0}
-
-.what h2 {
-	font-weight: 100;
-	letter-spacing: 0.1em;
-	font-size: 30px;
-	margin: 0 0 0;
-	padding: 0;
-}
-
-.what_text {
-	margin: 30px auto 120px;
-	width: 650px;
-	text-align: left;
-}
-
-@media (max-width: 480px) {
-.logo_star {
-	margin: 0 auto 30px;
-}
-	
-.what {
-	background: url("assets/sp_bg_02.png") no-repeat;
-	text-align: center;
-	background-position: center;
-}
-	
-.what_text {
-	margin: 0 auto 120px;
-	width: 100%;
-	text-align: center;
-}
-	
-.what .number {
-	color: #a0d592;
-	font-size: 50px;
-	margin: 0}
-	
-.what h2 {
-	font-weight: 100;
-	letter-spacing: 0.1em;
-	font-size: 26px;
-	margin: 0 0 0;
-	padding: 0;
-}
-}
-
-.what_text h3 {
-	font-size: 1.8em;
-	font-weight: 100;
-	margin: 0;
-}
-
-@media (max-width: 480px) {
-.what_text {
-	margin: 50px auto 0;
-	width: 100%;
-	text-align: left;
-	padding: 0 10px;
-}
-.what_text h3 {
-	font-size: 1.6em;
-	font-weight: 100;
-}
-.what_text p {
-	letter-spacing: 0.1em;
-	line-height: 1.8em;
-	font-size: 1.2em;
-	text-align: center;
-}
-
-}
-
-.what_text p {
-	letter-spacing: 0.1em;
-	line-height: 1.8em;
-	font-size: 1.2em;
-}
-
-.what_text .color {
-	color: #FFEA62;
-}
-
-.what_text ul {
-	margin: 30px 0 0;
-	padding: 0;
-	list-style: none;
-	font-size:1.4em;
-	font-weight: 100;
-}
-
-.what_text li {
-	background: url("assets/icon_hikapo.png") no-repeat;
-	line-height: 28px;
-	margin: 0 0 25px;
-	padding: 0 0 0 35px;
-	text-align: left;
-	letter-spacing: 0.3em;
-}
-
-.clear {
-	clear: both;
-}
-
-	
