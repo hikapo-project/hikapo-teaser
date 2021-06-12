@@ -11,50 +11,98 @@ body {
   color: transparent;
   user-select: none;
 }
+.br-sp {
+  display: none;
+}
+
 p,
-h1 {
+blockquote {
   margin: 0;
+}
+h1,
+h2 {
+  margin: 0;
+  font-size: unset;
+  font-weight: unset;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  margin-bottom: -95px;
+  font-size: 0;
+  text-align: center;
 }
 .main {
   box-sizing: border-box;
   min-height: 100%;
-  padding-bottom: 84px;
-  overflow: hidden;
+  padding: 95px 0 84px;
+  margin: 0 10px;
 }
 .footer {
   padding: 33px 0 25px;
+  margin-top: -84px;
+}
+
+.logo-star {
+  width: 375px;
+  height: 95px;
+}
+.what-header {
+  background-image: url("assets/sp_bg_01.png");
+  background-position: center;
+  background-size: cover;
+}
+.what-header-number {
+  font-size: 50px;
+  color: #a0d592;
   text-align: center;
 }
-.heading {
-  width: 292px;
-  height: 79px;
-  margin: 42px auto 0;
-  background-image: url(assets/heading-mobile.png);
-  background-size: 100%;
-}
-.logo {
-  width: 221px;
-  height: 184px;
-  margin: 37px auto 0;
-  background-image: url(assets/logo.png);
-  background-size: 100%;
-}
-.coming-soon {
-  margin-top: 30px;
+.what-header-text {
   font-size: 26px;
-  line-height: 37px;
-  color: #707070;
   text-align: center;
-  letter-spacing: 1.3px;
 }
-.icon-wrap {
+.what-quote {
+  margin-top: 50px;
+  font-size: 26px;
+}
+.what-quote-indent {
+  padding-inline-start: 6ex;
+}
+.what-text {
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+}
+.what-text:not(:last-child) {
+  margin-bottom: 30px;
+}
+.what-ul {
+  margin-top: 30px;
+  list-style: none;
+}
+.what-ul > li {
+  padding-left: 35px;
+  margin-bottom: 25px;
+  font-size: 22px;
+  line-height: 32px;
+  background-image: url("assets/icon_hikapo.png");
+  background-repeat: no-repeat;
+}
+.what-ul > li::marker {
+  display: inline-block;
+}
+
+/* .icon-wrap {
   margin-top: 21px;
   text-align: center;
 }
 .icon {
   width: 48px;
   height: 48px;
-}
+} */
 .copyrights {
   font-size: 18px;
   line-height: 26px;
@@ -63,158 +111,43 @@ h1 {
   letter-spacing: 0.9px;
 }
 
-#content {
-  text-align: center;
-}
-#content img {
-  width: 647px;
-  max-width: 100%;
-  height: auto;
-}
-#main {
-  width: 100%;
-  margin: 0px auto 100px;
-  text-align: center;
-}
-.logo_star {
-  margin: 0 auto;
-}
-.what {
-  margin: 0;
-  text-align: center;
-  background: url("assets/sp_bg_01.png") no-repeat;
-  background-position: center;
-}
-.what .number {
-  margin: -50px 0 0 0;
-  font-size: 60px;
-  color: #a0d592;
-}
-.what h2 {
-  padding: 0;
-  margin: 0 0 0;
-  font-size: 30px;
-  font-weight: 100;
-  letter-spacing: 0.1em;
-}
-.what_text {
-  width: 650px;
-  margin: 30px auto 120px;
-  text-align: left;
-}
-.what_text h3 {
-  margin: 0;
-  font-size: 1.8em;
-  font-weight: 100;
-}
-.what_text p {
-  font-size: 1.2em;
-  line-height: 1.8em;
-  letter-spacing: 0.1em;
-}
-.what_text .color {
-  color: #ffea62;
-}
-.what_text ul {
-  padding: 0;
-  margin: 30px 0 0;
-  font-size: 1.4em;
-  font-weight: 100;
-  list-style: none;
-}
-.what_text li {
-  padding: 0 0 0 35px;
-  margin: 0 0 25px;
-  line-height: 28px;
-  text-align: left;
-  letter-spacing: 0.3em;
-  background: url("assets/icon_hikapo.png") no-repeat;
-}
-.clear {
-  clear: both;
-}
-
 @media (min-width: 768px) {
-  .background {
-    background-position-y: 250%;
-    background-size: 1920px;
-    transform: translateY(-50%);
+  .header {
+    margin-bottom: -155px;
+  }
+  .logo-star {
+    width: 647px;
+    height: 155px;
   }
   .main {
-    padding-bottom: 136px;
+    width: 650px;
+    padding: 155px 0 136px;
+    margin: 0 auto;
   }
   .footer {
     padding-top: 55px;
     padding-bottom: 55px;
+    margin-top: -136px;
   }
-  .heading {
-    width: 642px;
-    height: 42px;
-    margin-top: 38px;
-    background-image: url(assets/heading-desktop.png);
+
+  .what-header-number {
+    font-size: 60px;
+    line-height: 88px;
   }
-  .logo {
-    width: 376px;
-    height: 315px;
-    margin-top: 39px;
-  }
-  .logo-wrap {
-    width: 720px;
-    height: 358px;
-    margin: 30px auto 0;
-    overflow: hidden;
-    background-image: url(assets/bg.gif);
-    background-size: 100%;
-  }
-  .coming-soon {
-    margin-top: 30px;
+  .what-header-text {
     font-size: 30px;
     line-height: 44px;
-    letter-spacing: 1.5px;
   }
-  .icon-wrap {
+  .what-quote {
+    margin-top: 30px;
+  }
+  .what-text {
+    text-align: start;
+  }
+  .what-text:not(:last-child) {
+    margin-bottom: 0;
+  }
+  /* .icon-wrap {
     margin-top: 58px;
-  }
-  .br-sp {
-    display: none;
-  }
-}
-
-@media (max-width: 576px) {
-  .logo_star {
-    margin: 0 auto 30px;
-  }
-  .what {
-    text-align: center;
-    background: url("assets/sp_bg_02.png") no-repeat;
-    background-position: center;
-  }
-  .what .number {
-    margin: 0;
-    font-size: 50px;
-    color: #a0d592;
-  }
-  .what h2 {
-    padding: 0;
-    margin: 0 0 0;
-    font-size: 26px;
-    font-weight: 100;
-    letter-spacing: 0.1em;
-  }
-  .what_text {
-    width: 100%;
-    padding: 0 10px;
-    margin: 50px auto 0;
-    text-align: left;
-  }
-  .what_text h3 {
-    font-size: 1.6em;
-    font-weight: 100;
-  }
-  .what_text p {
-    font-size: 1.2em;
-    line-height: 1.8em;
-    text-align: center;
-    letter-spacing: 0.1em;
-  }
+  } */
 }
