@@ -11,9 +11,6 @@ body {
   color: transparent;
   user-select: none;
 }
-.br-sp {
-  display: none;
-}
 
 p,
 blockquote {
@@ -31,14 +28,17 @@ ul {
 }
 
 .header {
-  margin-bottom: -95px;
   font-size: 0;
   text-align: center;
 }
 .main {
   box-sizing: border-box;
+  max-width: 670px;
   min-height: 100%;
-  padding: 95px 0 84px;
+  padding-bottom: 84px;
+  margin: 0 auto;
+}
+.content {
   margin: 0 10px;
 }
 .footer {
@@ -47,8 +47,8 @@ ul {
 }
 
 .logo-star {
-  width: 375px;
-  height: 95px;
+  width: 647px;
+  max-width: 100%;
 }
 .what-header {
   background-image: url("assets/sp_bg_01.png");
@@ -69,12 +69,15 @@ ul {
   font-size: 26px;
 }
 .what-quote-indent {
-  padding-inline-start: 6ex;
+  display: block;
+  padding-inline-start: 80px;
 }
 .what-text {
   font-size: 20px;
   line-height: 34px;
   text-align: center;
+  word-break: keep-all;
+  white-space: nowrap;
 }
 .what-text:not(:last-child) {
   margin-bottom: 30px;
@@ -112,17 +115,8 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .header {
-    margin-bottom: -155px;
-  }
-  .logo-star {
-    width: 647px;
-    height: 155px;
-  }
   .main {
-    width: 650px;
-    padding: 155px 0 136px;
-    margin: 0 auto;
+    padding-bottom: 136px;
   }
   .footer {
     padding-top: 55px;
