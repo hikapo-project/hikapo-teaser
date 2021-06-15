@@ -51,9 +51,10 @@ ul {
   max-width: 100%;
 }
 .what-header {
-  background-image: url("assets/sp_bg_01.png");
+  background-image: url("assets/sp_bg_02.png");
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 .what-header-number {
   font-size: 50px;
@@ -124,6 +125,10 @@ ul {
     margin-top: -136px;
   }
 
+  .what-header {
+    background-image: url("assets/sp_bg_01.png");
+    background-size: cover;
+  }
   .what-header-number {
     font-size: 60px;
     line-height: 88px;
